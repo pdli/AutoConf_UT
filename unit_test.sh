@@ -2,7 +2,7 @@
 #Install Docker if not exist
 if ! [ -x "$(command -v docker)" ]
 then
-        sudo apt-get install docker.io -y
+        sudo apt-get update && sudo apt-get install docker.io -y
 fi
 
 #Run unit test on several distros
