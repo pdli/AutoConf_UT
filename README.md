@@ -6,7 +6,7 @@
 * Copy linux under /home/jenkins/linux
 * Run scripts in Ubuntu distro only
 
-#### Commands to run UT
+### Commands to run UT
 * ./unit_test.sh <Feature Name in log>
 
 ### Compiler Config per Distro
