@@ -1,4 +1,11 @@
 #!/bin/bash
+#Install Docker if not exist
+if ! [ -x "$(command -v docker)" ]
+then
+        sudo apt-get install docker.io -y
+fi
+
+#Run unit test on several distros
 echo "*****************************************************************"
 echo "Distro - Ubuntu 18.04.2"
 if [ -z "$1" ]
