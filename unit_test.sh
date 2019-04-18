@@ -7,7 +7,7 @@ fi
 
 #Run unit test on several distros
 echo "*****************************************************************"
-echo "Distro - Ubuntu 18.04.2"
+echo "Distro - Ubuntu 18.04.2, Kernel - 4.18"
 if [ -z "$1" ]
 then
         echo "Empty: yes";
@@ -18,7 +18,7 @@ else
 fi
 
 echo -e "\n****************************************************************"
-echo -e "Distro - RedHat 7.6"
+echo -e "Distro - RedHat 7.6, Kernel - 3.10, Drm - 4.17"
 if [ -z "$1" ]
 then
         echo "Empty: yes";
@@ -29,7 +29,7 @@ else
 fi
 
 echo -e "\n***************************************************************"
-echo -e "Distro - RedHat 8.0"
+echo -e "Distro - RedHat 8.0, Kernel - 4.18, Drm - 4.18"
 if [ -z "$1" ]
 then
         echo "Empty: yes";
