@@ -7,4 +7,5 @@ RUN  yum install gcc -y \
 # update gcc compiler version to 4.8.5 20150623, otherwise there will be compile issue
 VOLUME [/opt/src/linux]
 WORKDIR /opt/src/linux/drivers/gpu/drm/amd/dkms/
-CMD autoconf & ./configure
+RUN rm -fr ./configure ./*.log
+CMD autoconf && ./configure

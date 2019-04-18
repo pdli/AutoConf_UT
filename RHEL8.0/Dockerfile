@@ -6,4 +6,5 @@ RUN  apt-get update && apt-get install autoconf -y \
 #    && apt-get install git -y 
 VOLUME [/opt/src/linux]
 WORKDIR /opt/src/linux/drivers/gpu/drm/amd/dkms/
-CMD autoconf & ./configure
+RUN rm -fr ./configure ./*.log
+CMD autoconf && ./configure
